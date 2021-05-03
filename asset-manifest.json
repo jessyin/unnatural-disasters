@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/unnatural-disasters/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/unnatural-disasters/static/js/main.cbf65fac.chunk.js",
+    "main.js.map": "/unnatural-disasters/static/js/main.cbf65fac.chunk.js.map",
+    "runtime-main.js": "/unnatural-disasters/static/js/runtime-main.e35062f9.js",
+    "runtime-main.js.map": "/unnatural-disasters/static/js/runtime-main.e35062f9.js.map",
+    "static/js/2.8c949827.chunk.js": "/unnatural-disasters/static/js/2.8c949827.chunk.js",
+    "static/js/2.8c949827.chunk.js.map": "/unnatural-disasters/static/js/2.8c949827.chunk.js.map",
+    "static/js/3.5e779225.chunk.js": "/unnatural-disasters/static/js/3.5e779225.chunk.js",
+    "static/js/3.5e779225.chunk.js.map": "/unnatural-disasters/static/js/3.5e779225.chunk.js.map",
+    "index.html": "/unnatural-disasters/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/unnatural-disasters/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.8c949827.chunk.js.LICENSE.txt": "/unnatural-disasters/static/js/2.8c949827.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/unnatural-disasters/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e35062f9.js",
+    "static/js/2.8c949827.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.cbf65fac.chunk.js"
+  ]
+}
