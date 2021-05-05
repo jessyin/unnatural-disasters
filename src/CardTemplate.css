@@ -13,13 +13,32 @@
   margin: 4px;
   padding: 12px;
   cursor: pointer;
-  color: var(--dark);
+  color: var(--light);
   font-weight: 400;
 }
 
+.CardTemplate-button:hover {
+  background-color: #fff3;
+}
+
+.CardTemplate-cardCount {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 6px;
+}
+
+.CardTemplate-summary {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  justify-content: center;
+}
+
 .selected {
-  border-bottom: 2px solid var(--blue);
-  color: var(--blue);
+  border-bottom: 2px solid var(--light);
+  color: var(--light);
   font-weight: 800;
 }
 
@@ -30,9 +49,21 @@
   justify-content: center;
 }
 
+.Deck {
+  display: none;
+}
+
 @media print {
-  .CardTemplate-createDeck {
+  .CardTemplate-summary, .CardTemplate-inputs, .GamePieces-instructions, .CardTemplate-createDeck *, .App-navbar * {
     display: none;
+  }
+
+  .App {
+    background-color: white;
+  }
+
+  .Deck {
+    display: table;
   }
 }
 
