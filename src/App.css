@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+.App {
+  text-align: center;
+  font-family: "Open Sans";
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 10%;
+}
+
+@media only screen and (max-width:900px) {
+  .App {
+    padding-top: 20%;
+  }
+}
+
+body {
+  color: var(--light);
+  background-color: #68c0d6;
+  justify-content: center;
+}
+
+.App-tab {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.App-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blue);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  color: var(--light);
+  z-index: 1;
+}
+
+.App-pageSelector{
+  padding-right: 48px;
+}
+
+.App-navbar h1 {
+  padding-left: 48px;
+}
+
+.App-navbar .selected {
+  color: var(--light);
+  border: none;
+}
+
+:root {
+  --dark: rgb(62, 69, 75);
+  --light: #f0f4f8;
+  --blue: #62b6cb;
+  --green: #57cc99;
+  --red: #d33e4d;
+  --yellow: #f9e581;
+}
+
+.Discussion {
+  background-color: var(--yellow);
+  color: var(--dark);
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.Discussion ol{
+  text-align: start;
+  font-weight: 600;
+}
+
+.GamePieces-instructions {
+  background-color: var(--light);
+  padding: 24px;
+  border-radius: 24px;
+  color: var(--dark);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+a {
+  color: mediumpurple;
+  font-weight: 600;
+}
