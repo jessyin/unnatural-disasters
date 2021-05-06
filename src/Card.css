@@ -12,6 +12,7 @@
   background-color: white;
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 @media print {

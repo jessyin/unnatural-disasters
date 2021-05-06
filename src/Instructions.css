@@ -1,0 +1,28 @@
+.Instructions {
+  padding: 24px;
+  border-radius: 24px;
+  color: var(--light)
+}
+
+.Instructions-section {
+  background-color: var(--light);
+  color: var(--dark);
+  border-radius: 24px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+}
+
+.Instructions-section-title {
+  font-weight: 600;
+  font-size: 2em;
+  color: var(--blue);
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+.Instructions-section-content {
+  padding-left: 24px;
+  text-align: start;
+}

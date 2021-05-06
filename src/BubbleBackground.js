@@ -1,7 +1,7 @@
 import "./BubbleBackground.css";
 
 const BubbleBackground = () => (
-  <ul class="bg-bubbles">
+  <ul className="bg-bubbles">
     <li></li>
     <li></li>
     <li></li>
