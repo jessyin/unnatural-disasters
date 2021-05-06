@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/unnatural-disasters/static/css/main.03441c7f.chunk.css",
+    "main.js": "/unnatural-disasters/static/js/main.af1bb189.chunk.js",
+    "main.js.map": "/unnatural-disasters/static/js/main.af1bb189.chunk.js.map",
+    "runtime-main.js": "/unnatural-disasters/static/js/runtime-main.67cd9824.js",
+    "runtime-main.js.map": "/unnatural-disasters/static/js/runtime-main.67cd9824.js.map",
+    "static/js/2.bd56ba3e.chunk.js": "/unnatural-disasters/static/js/2.bd56ba3e.chunk.js",
+    "static/js/2.bd56ba3e.chunk.js.map": "/unnatural-disasters/static/js/2.bd56ba3e.chunk.js.map",
+    "index.html": "/unnatural-disasters/index.html",
+    "static/css/main.03441c7f.chunk.css.map": "/unnatural-disasters/static/css/main.03441c7f.chunk.css.map",
+    "static/js/2.bd56ba3e.chunk.js.LICENSE.txt": "/unnatural-disasters/static/js/2.bd56ba3e.chunk.js.LICENSE.txt",
+    "static/media/attack.771f1667.png": "/unnatural-disasters/static/media/attack.771f1667.png",
+    "static/media/disaster.26b419df.png": "/unnatural-disasters/static/media/disaster.26b419df.png",
+    "static/media/first_player.19343ab9.png": "/unnatural-disasters/static/media/first_player.19343ab9.png",
+    "static/media/gameplay.0b407ebd.png": "/unnatural-disasters/static/media/gameplay.0b407ebd.png",
+    "static/media/neutralize.78139411.png": "/unnatural-disasters/static/media/neutralize.78139411.png",
+    "static/media/recall_deal.fdc7fc0c.png": "/unnatural-disasters/static/media/recall_deal.fdc7fc0c.png",
+    "static/media/recycle.e8ccb462.png": "/unnatural-disasters/static/media/recycle.e8ccb462.png",
+    "static/media/relief.cd39254f.png": "/unnatural-disasters/static/media/relief.cd39254f.png",
+    "static/media/skip.98c1cb42.png": "/unnatural-disasters/static/media/skip.98c1cb42.png",
+    "static/media/spinner.b15cefcc.png": "/unnatural-disasters/static/media/spinner.b15cefcc.png",
+    "static/media/start.97259372.png": "/unnatural-disasters/static/media/start.97259372.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.67cd9824.js",
+    "static/js/2.bd56ba3e.chunk.js",
+    "static/css/main.03441c7f.chunk.css",
+    "static/js/main.af1bb189.chunk.js"
+  ]
+}
