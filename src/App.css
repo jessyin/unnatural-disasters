@@ -86,3 +86,16 @@ a {
   color: mediumpurple;
   font-weight: 600;
 }
+
+.About {
+  background-color: var(--yellow);
+  color: var(--dark);
+  padding: 24px 48px 48px 48px;
+  border-radius: 12px;
+}
+
+.Discussion-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

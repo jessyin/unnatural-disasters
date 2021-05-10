@@ -158,34 +158,42 @@ const CardTemplate = () => {
   };
 
   return (
-      <div className="CardTemplate">
-        <div className="CardTemplate-buttons">
-          <span
-            className={cx("CardTemplate-button", useDefault ? "selected" : "")}
-            onClick={() => setUseDefault(true)}
-          >
-            Default Deck
-          </span>
-          <span
-            className={cx("CardTemplate-button", useDefault ? "" : "selected")}
-            onClick={() => setUseDefault(false)}
-          >
-            Create your own deck
-          </span>
-        </div>
-        {useDefault ? (
-          <p>
-            Use our premade deck. <a href="#" onClick={() => window.print() }>Click here to print!</a>
-          </p>
-        ) : (
-          <p>
-            Think about what actions you can do to <b>help</b> the enviornment, and what actions you
-            do that may <b>hurt</b> the enviornment... <br></br> When you are done, <a href="#" onClick={() => window.print() }>click here to print!</a></p>
-        )}
-        {createInputs()}
-        {cardSummary()}
-        <Deck useDefault={useDefault} chaosCards={chaosCards} orderCards={orderCards} />
+    <div className="CardTemplate">
+      <div className="CardTemplate-buttons">
+        <span
+          className={cx("CardTemplate-button", useDefault ? "selected" : "")}
+          onClick={() => setUseDefault(true)}
+        >
+          Default Deck
+        </span>
+        <span
+          className={cx("CardTemplate-button", useDefault ? "" : "selected")}
+          onClick={() => setUseDefault(false)}
+        >
+          Create your own deck
+        </span>
       </div>
+      {useDefault ? (
+        <p>
+          Use our premade deck.{" "}
+          <a href="#" onClick={() => window.print()}>
+            Click here to print!
+          </a>
+        </p>
+      ) : (
+        <p>
+          Think about what actions you can do to <b>help</b> the enviornment, and what actions you
+          do that may <b>hurt</b> the enviornment... <br></br> When you are done,{" "}
+          <a href="#" onClick={() => window.print()}>
+            click here to print!
+          </a>{" "}
+          Then draw your own graphics to each card.
+        </p>
+      )}
+      {createInputs()}
+      {cardSummary()}
+      <Deck useDefault={useDefault} chaosCards={chaosCards} orderCards={orderCards} />
+    </div>
   );
 };
 
