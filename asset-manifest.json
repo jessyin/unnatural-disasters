@@ -1,31 +1,34 @@
 {
   "files": {
-    "main.css": "/unnatural-disasters/static/css/main.9043fae7.chunk.css",
-    "main.js": "/unnatural-disasters/static/js/main.067c899a.chunk.js",
-    "main.js.map": "/unnatural-disasters/static/js/main.067c899a.chunk.js.map",
+    "main.css": "/unnatural-disasters/static/css/main.ee7914de.chunk.css",
+    "main.js": "/unnatural-disasters/static/js/main.41fdd0db.chunk.js",
+    "main.js.map": "/unnatural-disasters/static/js/main.41fdd0db.chunk.js.map",
     "runtime-main.js": "/unnatural-disasters/static/js/runtime-main.67cd9824.js",
     "runtime-main.js.map": "/unnatural-disasters/static/js/runtime-main.67cd9824.js.map",
-    "static/js/2.bd56ba3e.chunk.js": "/unnatural-disasters/static/js/2.bd56ba3e.chunk.js",
-    "static/js/2.bd56ba3e.chunk.js.map": "/unnatural-disasters/static/js/2.bd56ba3e.chunk.js.map",
+    "static/js/2.d03fe862.chunk.js": "/unnatural-disasters/static/js/2.d03fe862.chunk.js",
+    "static/js/2.d03fe862.chunk.js.map": "/unnatural-disasters/static/js/2.d03fe862.chunk.js.map",
     "index.html": "/unnatural-disasters/index.html",
-    "static/css/main.9043fae7.chunk.css.map": "/unnatural-disasters/static/css/main.9043fae7.chunk.css.map",
-    "static/js/2.bd56ba3e.chunk.js.LICENSE.txt": "/unnatural-disasters/static/js/2.bd56ba3e.chunk.js.LICENSE.txt",
+    "static/css/main.ee7914de.chunk.css.map": "/unnatural-disasters/static/css/main.ee7914de.chunk.css.map",
+    "static/js/2.d03fe862.chunk.js.LICENSE.txt": "/unnatural-disasters/static/js/2.d03fe862.chunk.js.LICENSE.txt",
     "static/media/attack.6d6550c1.png": "/unnatural-disasters/static/media/attack.6d6550c1.png",
-    "static/media/disaster.38d898ab.png": "/unnatural-disasters/static/media/disaster.38d898ab.png",
+    "static/media/choose.5708a981.png": "/unnatural-disasters/static/media/choose.5708a981.png",
+    "static/media/drought.31b378c2.png": "/unnatural-disasters/static/media/drought.31b378c2.png",
     "static/media/first_player.19343ab9.png": "/unnatural-disasters/static/media/first_player.19343ab9.png",
     "static/media/gameplay.2098a015.png": "/unnatural-disasters/static/media/gameplay.2098a015.png",
+    "static/media/hurricane.66d34d47.png": "/unnatural-disasters/static/media/hurricane.66d34d47.png",
     "static/media/neutralize.f240245d.png": "/unnatural-disasters/static/media/neutralize.f240245d.png",
     "static/media/recall_deal.fdc7fc0c.png": "/unnatural-disasters/static/media/recall_deal.fdc7fc0c.png",
     "static/media/recycle.6559d073.png": "/unnatural-disasters/static/media/recycle.6559d073.png",
     "static/media/relief.077b93d6.png": "/unnatural-disasters/static/media/relief.077b93d6.png",
     "static/media/skip.fd7d6a16.png": "/unnatural-disasters/static/media/skip.fd7d6a16.png",
+    "static/media/spin.c9961b94.png": "/unnatural-disasters/static/media/spin.c9961b94.png",
     "static/media/spinner.b15cefcc.png": "/unnatural-disasters/static/media/spinner.b15cefcc.png",
     "static/media/start.97259372.png": "/unnatural-disasters/static/media/start.97259372.png"
   },
   "entrypoints": [
     "static/js/runtime-main.67cd9824.js",
-    "static/js/2.bd56ba3e.chunk.js",
-    "static/css/main.9043fae7.chunk.css",
-    "static/js/main.067c899a.chunk.js"
+    "static/js/2.d03fe862.chunk.js",
+    "static/css/main.ee7914de.chunk.css",
+    "static/js/main.41fdd0db.chunk.js"
   ]
 }
