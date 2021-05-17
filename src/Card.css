@@ -68,12 +68,30 @@
   position: absolute;
 }
 
-.NATURAL.DISASTER {
+.HURRICANE, .STORM, .HEAT.WAVE, .FLOOD, .DROUGHT, .WILDFIRE {
   border-color: var(--red);
 }
 
-.NATURAL.DISASTER :is(.Card-name, svg) {
+.HURRICANE :is(.Card-name, svg), 
+.STORM :is(.Card-name, svg), 
+.HEAT.WAVE :is(.Card-name, svg), 
+.FLOOD :is(.Card-name, svg), 
+.DROUGHT :is(.Card-name, svg), 
+.WILDFIRE :is(.Card-name, svg) {
   color: var(--red);
+}
+
+.HURRICANE :is(.Card-description), 
+.STORM :is(.Card-description), 
+.HEAT.WAVE :is(.Card-description), 
+.FLOOD :is(.Card-description), 
+.DROUGHT :is(.Card-description), 
+.WILDFIRE :is(.Card-description) {
+  font-size: 1em;
+}
+
+.ORDER img{
+  opacity: 0.75;
 }
 
 .RELIEF.PACK {
@@ -84,11 +102,11 @@
   color: var(--green);
 }
 
-.NOPE {
+.CANCELLED {
   border-color: gray;
 }
 
-.NOPE :is(.Card-name, svg) {
+.CANCELLED :is(.Card-name, svg) {
   color: gray;
 }
 
@@ -100,11 +118,11 @@
   color: var(--blue);
 }
 
-.FAVOR {
+.HELPING.HAND {
   border-color: orange;
 }
 
-.FAVOR :is(.Card-name, svg) {
+.HELPING.HAND :is(.Card-name, svg) {
   color: orange;
 }
 

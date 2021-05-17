@@ -17,7 +17,7 @@ const Card = ({ description, name, type, iconOrImage }) => {
     return <FontAwesomeIcon icon={iconOrImage} size={"4x"} />;
   };
   return (
-    <div className={cx("Card", name)}>
+    <div className={cx("Card", name.replace(/#/g, ""))}>
       {type ? <FontAwesomeIcon icon={type} className="Card-type" size={"2x"} /> : null}
       <p className="Card-name">{name}</p>
       <div className="Card-content">

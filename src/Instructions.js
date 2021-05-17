@@ -10,9 +10,10 @@ import neutralizeImg from "./images/neutralize.png";
 import skipImg from "./images/skip.png";
 import attackImg from "./images/attack.png";
 import recycleImg from "./images/recycle.png";
-import disasterImg from "./images/disaster.png";
 import reliefImg from "./images/relief.png";
 import spinnerImg from "./images/spinner.png";
+import choosImg from "./images/choose.png";
+import spinSurviveImg from "./images/spin.png";
 
 import "./Instructions.css";
 
@@ -26,8 +27,9 @@ const Instructions = () => {
           <div className="Instructions-section-title">SETUP</div>
           <div className="Instructions-section-content">
             <p>
-              You will need the original or your custom-made <i>Un-Natural Disasters</i> deck of cards, and a 1-8 numbered spinner or an 8-sided die.
-              You can find and print these game pieces on the <u>Game Pieces</u> tab.
+              You will need the original or your custom-made <i>Un-Natural Disasters</i> deck of
+              cards, and a 1-8 numbered spinner or an 8-sided die. You can find and print these game
+              pieces on the <u>Game Pieces</u> tab.
             </p>
             <ol>
               <li>
@@ -39,7 +41,7 @@ const Instructions = () => {
                 Deal 1 <b>Relief Pack</b> card to each player
               </li>
               <li>
-                Shuffle all the remaining <b>Relief Pack</b> and <b>Natural Disaster</b> cards into
+                Shuffle all the remaining <b>Relief Pack</b> and <b>Natural Disaster</b> (red cards) cards into
                 the deck.
               </li>
               <li>
@@ -137,15 +139,13 @@ const Instructions = () => {
             <b>Special Card Actions: Discard after use</b>
             <ul>
               <li>
-                <i>Favor</i> - ask another player for a card in their hand. They may choose any card
-                in their hand to give to you.
+                <i>Helping Hand</i> - ask any other player for an Order card in their hand. If they don't have any Order cards, you don't get any cards from them.
               </li>
               <li>
                 <i>Forecast</i> - take a peek the top three cards in the deck.
               </li>
               <li>
-                <i>Nope</i> - stops the action of another player. Cannot be used on natural disaster
-                cards.
+                <i>#Cancelled</i> - Prevent another person from playing attacks, skipping, recycling, or special cards.
               </li>
             </ul>
           </div>
@@ -156,31 +156,64 @@ const Instructions = () => {
           <div className="Instructions-section-content">
             <b>To end your turn:</b> draw a card from the deck.
             <p>
-              If you draw a <b>Natural Disaster</b>, you must reveal the card in the environment,
-              and spin the spinner/roll the dice.
+              If you draw a <b>Natural Disaster</b> (red card), you must reveal the card in the environment,
+              and follow the instructions on the card.
             </p>
-            <Card
-              name={NON_CUSTOM_CARDS.DISASTER.name}
-              description={NON_CUSTOM_CARDS.DISASTER.description}
-              iconOrImage={NON_CUSTOM_CARDS.DISASTER.icon}
-            />
-            <ul>
-              <li>
-                If you get a number <i>more</i> than the <b>Chaos Counter</b> (Chaos Counter =
-                number of <b>Chaos</b> cards in the environment + 1), then you are{" "}
-                <span style={{ color: "var(--green)" }}>safe</span>.
-              </li>
-              <li>
-                If you get <i>less than or equal</i> to the number of <b>Chaos</b> cards in the
-                enviornment + 1, then you are <span style={{ color: "var(--red)" }}>hit</span> by
-                the <b>Natural Disaster</b>.
-              </li>
-            </ul>
-            <p>
-              When <span style={{ color: "var(--red)" }}>hit</span> by the <b>Natural Disaster</b>,
+            <b>Types of Instructions:</b>
+            <ol>
+              <li><i>Choose to - </i>Some instructions may start with the words, "choose to". For those natural disasters, you must perform one of the two options listed.</li>
+              <div style={{ display: "inline" }}>
+                <Card
+                  name={NON_CUSTOM_CARDS.DISASTER_HURRICANE.name}
+                  description={NON_CUSTOM_CARDS.DISASTER_HURRICANE.description}
+                  iconOrImage={NON_CUSTOM_CARDS.DISASTER_HURRICANE.icon}
+                />
+                <Card
+                  name={NON_CUSTOM_CARDS.DISASTER_HEAT.name}
+                  description={NON_CUSTOM_CARDS.DISASTER_HEAT.description}
+                  iconOrImage={NON_CUSTOM_CARDS.DISASTER_HEAT.icon}
+                />
+              </div>
+              <li><i>Spin to survive</i> - You must spin the spinner or roll the dice.</li>
+              <ul>
+                <li>
+                  If you get a number <i>more</i> than the <b>Chaos Counter</b> (Chaos Counter =
+                  number of <b>Chaos</b> cards in the environment + 1), then you
+                  <span style={{ color: "var(--green)" }}> survive</span>.
+                </li>
+                <li>
+                  If you get <i>less than or equal</i> to the number of <b>Chaos</b> cards in the
+                  enviornment + 1, then you are <span style={{ color: "var(--red)" }}>hit</span> by
+                  the <b>Natural Disaster</b>.
+                </li>
+              </ul>
+              <div style={{ display: "inline" }}>
+                <Card
+                  name={NON_CUSTOM_CARDS.DISASTER_DROUGHT.name}
+                  description={NON_CUSTOM_CARDS.DISASTER_DROUGHT.description}
+                  iconOrImage={NON_CUSTOM_CARDS.DISASTER_DROUGHT.icon}
+                />
+                <Card
+                  name={NON_CUSTOM_CARDS.DISASTER_WILDFIRE.name}
+                  description={NON_CUSTOM_CARDS.DISASTER_WILDFIRE.description}
+                  iconOrImage={NON_CUSTOM_CARDS.DISASTER_WILDFIRE.icon}
+                />
+                <Card
+                  name={NON_CUSTOM_CARDS.DISASTER_STORM.name}
+                  description={NON_CUSTOM_CARDS.DISASTER_STORM.description}
+                  iconOrImage={NON_CUSTOM_CARDS.DISASTER_STORM.icon}
+                />
+                <Card
+                  name={NON_CUSTOM_CARDS.DISASTER_FLOODS.name}
+                  description={NON_CUSTOM_CARDS.DISASTER_FLOODS.description}
+                  iconOrImage={NON_CUSTOM_CARDS.DISASTER_FLOODS.icon}
+                />
+              </div>
+              <li><i>Hit</i> - When <span style={{ color: "var(--red)" }}>hit</span> by the <b>Natural Disaster</b>,
               if you or another player use a <b>Relief Pack</b> card, you survive. If no{" "}
-              <b>Relief Pack</b> card is used, then you are out of the game. Discard the <b>Natural Disaster</b> and <b>Relief Pack</b> cards after use.
-            </p>
+              <b>Relief Pack</b> card is used, then you are out of the game. Discard the{" "}
+              <b>Natural Disaster</b> and <b>Relief Pack</b> cards after use.</li>
+            </ol>
             <Card
               name={NON_CUSTOM_CARDS.RELIEF.name}
               description={NON_CUSTOM_CARDS.RELIEF.description}
@@ -211,9 +244,12 @@ const Instructions = () => {
           <div className="Instructions-section-title">SETUP</div>
           <div className="Instructions-section-content">
             <p>
-              Play on this <a href="https://playingcards.io/d72tb7">link</a> with zoom opened on the
-              side. Try to organize your screen to see both zoom and the playingcards.io interface
-              at the same time:
+              Play on this{" "}
+              <a href="https://playingcards.io/d72tb7" target="_blank">
+                link
+              </a>{" "}
+              with zoom opened on the side. Try to organize your screen to see both zoom and the
+              playingcards.io interface at the same time:
             </p>
             <div
               style={{
@@ -237,7 +273,7 @@ const Instructions = () => {
               <li>
                 Click on the <b>Recall all Cards</b> button, then the <b>Deal</b> button. This will
                 give you 5 cards from the deck, 1 <b>Relief Package</b> card, and disperse the{" "}
-                <b>Natural Disaster</b> cards into the main deck
+                <b>Natural Disaster</b> (red cards) cards into the main deck
               </li>
               <img src={recallImg} height="200px" />
               <li>
@@ -297,15 +333,13 @@ const Instructions = () => {
             <b>Special Card Actions: Discard after use</b>
             <ul>
               <li>
-                <i>Favor</i> - ask another player for a card in their hand. They may choose any card
-                in their hand to give to you.
+                <i>Helping Hand</i> - ask any other player for an Order card in their hand. If they don't have any Order cards, you don't get any cards from them.
               </li>
               <li>
                 <i>Forecast</i> - take a peek the top three cards in the deck.
               </li>
               <li>
-                <i>Nope</i> - stops the action of another player. Cannot be used on natural disaster
-                cards.
+                <i>#Cancelled</i> - Prevent another person from playing attacks, skipping, recycling, or special cards.
               </li>
             </ul>
           </div>
@@ -316,30 +350,33 @@ const Instructions = () => {
           <div className="Instructions-section-content">
             <b>To end your turn:</b> draw a card from the deck, and adjust the counter if needed.
             <p>
-              If you draw a <b>Natural Disaster</b>, you must reveal the card in the environment,
-              and spin the spinner.
+              If you draw a <b>Natural Disaster</b> (red card), you must reveal the card in the environment,
+              and follow the instructions on the card.
             </p>
-            <div>
-              <img src={disasterImg} height="200px" />
-              <img src={spinnerImg} height="200px" />
-            </div>
-            <ul>
-              <li>
-                If you get a number <i>more</i> than the <b>Chaos Counter</b> (Chaos Counter =
-                number of <b>Chaos</b> cards in the environment + 1), then you are{" "}
-                <span style={{ color: "var(--green)" }}>safe</span>.
-              </li>
-              <li>
-                If you get <i>less than or equal</i> to the number of <b>Chaos</b> cards in the
-                enviornment + 1, then you are <span style={{ color: "var(--red)" }}>hit</span> by
-                the <b>Natural Disaster</b>.
-              </li>
-            </ul>
-            <p>
-              When <span style={{ color: "var(--red)" }}>hit</span> by the <b>Natural Disaster</b>,
+            <b>Types of Instructions:</b>
+            <ol>
+              <li><i>Choose to - </i>Some instructions may start with the words, "choose to". For those natural disasters, you must perform one of the two options listed.</li>
+              <img src={choosImg} height="200px" />
+              <li><i>Spin to survive</i> - You must spin the spinner or roll the dice.</li>
+              <ul>
+                <li>
+                  If you get a number <i>more</i> than the <b>Chaos Counter</b> (Chaos Counter =
+                  number of <b>Chaos</b> cards in the environment + 1), then you
+                  <span style={{ color: "var(--green)" }}> survive</span>.
+                </li>
+                <li>
+                  If you get <i>less than or equal</i> to the number of <b>Chaos</b> cards in the
+                  enviornment + 1, then you are <span style={{ color: "var(--red)" }}>hit</span> by
+                  the <b>Natural Disaster</b>.
+                </li>
+              </ul>
+              <img src={spinSurviveImg} height="180px" />
+              <img src={spinnerImg} height="180px" />
+              <li><i>Hit</i> - When <span style={{ color: "var(--red)" }}>hit</span> by the <b>Natural Disaster</b>,
               if you or another player use a <b>Relief Pack</b> card, you survive. If no{" "}
-              <b>Relief Pack</b> card is used, then you are out of the game. Discard the <b>Natural Disaster</b> and <b>Relief Pack</b> cards after use.
-            </p>
+              <b>Relief Pack</b> card is used, then you are out of the game. Discard the{" "}
+              <b>Natural Disaster</b> and <b>Relief Pack</b> cards after use.</li>
+            </ol>
             <img src={reliefImg} height="200px" />
           </div>
         </div>

@@ -3,6 +3,7 @@ import {
   faBatteryHalf,
   faCar,
   faCarAlt,
+  faCloudShowersHeavy,
   faCloudSunRain,
   faFireAlt,
   faGasPump,
@@ -14,12 +15,16 @@ import {
   faRecycle,
   faSolarPanel,
   faSubway,
+  faTemperatureHigh,
   faTint,
   faTrash,
   faUtensils,
+  faWater,
 } from "@fortawesome/free-solid-svg-icons";
 import waterBottle from "./images/water-bottle.png";
 import plastic from "./images/plastic.png";
+import drought from "./images/drought.png";
+import hurricane from "./images/hurricane.png";
 
 export const NON_CUSTOM_CARDS = {
   RELIEF: {
@@ -28,15 +33,81 @@ export const NON_CUSTOM_CARDS = {
     count: 6,
     icon: faMedkit,
   },
-  DISASTER: {
-    name: "NATURAL DISASTER",
-    description: "Spin the spinner. If your number is lower than the counter, you are dislocated.",
-    count: 12,
+  DISASTER_HURRICANE: {
+    name: "HURRICANE",
+    description: (
+      <div className="text-choose">
+        <p>Choose to:</p>
+        <p>1) dump all your chaos cards into the environment</p>
+        <p>OR</p>
+        <p>
+          2) <span className="text-spinner">Spin to survive.</span>
+        </p>
+      </div>
+    ),
+    count: 2,
+    icon: hurricane,
+  },
+  DISASTER_STORM: {
+    name: "STORM",
+    description: (
+      <p>
+        <span className="text-spinner">Spin to survive.</span>
+      </p>
+    ),
+    count: 3,
+    icon: faCloudShowersHeavy,
+  },
+  DISASTER_HEAT: {
+    name: "HEAT WAVE",
+    description: (
+      <div className="text-choose">
+        <p>Choose to:</p>
+        <p>
+          1) take the <span className="text-hit">hit</span>
+        </p>
+        <p>OR</p>
+        <p>2) leave this card in the environment as a permanent CHAOS card.</p>
+      </div>
+    ),
+    count: 1,
+    icon: faTemperatureHigh,
+  },
+  DISASTER_FLOODS: {
+    name: "FLOOD",
+    description: (
+      <p style={{ margin: 0 }}>
+        <span className="text-spinner">Spin to survive. </span>
+        After, discard all Order cards currently in the environment.
+      </p>
+    ),
+    count: 2,
+    icon: faWater,
+  },
+  DISASTER_DROUGHT: {
+    name: "DROUGHT",
+    description: (
+      <p style={{ fontSize: "small", margin: 0 }}>
+        <span className="text-spinner">Spin to survive</span> twice, both numbers must be higher
+        than the counter or you are <span className="text-hit">hit</span> by the drought.
+      </p>
+    ),
+    count: 2,
+    icon: drought,
+  },
+  DISASTER_WILDFIRE: {
+    name: "WILDFIRE",
+    description: (
+      <p>
+        You and the player after you must <span className="text-spinner">spin to survive</span>.
+      </p>
+    ),
+    count: 2,
     icon: faFireAlt,
   },
   FAVOR: {
-    name: "FAVOR",
-    description: "Ask another player for a card.",
+    name: "HELPING HAND",
+    description: "Ask another player for an order card.",
     count: 4,
     icon: faGift,
   },
@@ -47,8 +118,8 @@ export const NON_CUSTOM_CARDS = {
     icon: faCloudSunRain,
   },
   NOPE: {
-    name: "NOPE",
-    description: "Cancel another player's action",
+    name: "#CANCELLED",
+    description: "Cancel culture is tough. Prevent attacks, skipping, recycling, or special cards",
     count: 4,
     icon: faHandPaper,
   },

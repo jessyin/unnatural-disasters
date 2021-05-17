@@ -99,3 +99,32 @@ a {
   flex-direction: column;
   align-items: center;
 }
+
+.text-spinner {
+  color: var(--red);
+}
+
+.text-hit {
+  color: var(--red);
+  font-weight: bold;
+}
+
+.text-choose {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-choose p:nth-child(even) {
+  flex: 1;
+  margin: 0;
+  font-size: small;
+  font-weight: 600;
+}
+
+.text-choose p:nth-child(odd) {
+  flex: 1;
+  margin: 0;
+  font-size: smaller;
+}

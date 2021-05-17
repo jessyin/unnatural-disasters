@@ -14,8 +14,8 @@ const About = () => (
     </p>
     <p>
       If we continue with this trend, the one and only place we call home, Earth, will deteriotate
-      before long before we know it. Bad stuff. So, how do we plan on tackling an issue as big as
-      climate change? A game. Yes, you heard us right. We believe a game is the perfect way to raise
+      long before we know it. Bad stuff. So, how do we plan on tackling an issue as big as climate
+      change? A game. Yes, you heard us right. We believe a game is the perfect way to raise
       awareness and provide an engaging way for students to learn.
     </p>
     <p>

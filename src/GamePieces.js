@@ -7,7 +7,9 @@ const GamePieces = () => {
         <h2>Game Pieces: What you'll need to play Un-Natural Disasters</h2>
         <p>
           Play online at:{" "}
-          <a href="https://playingcards.io/d72tb7">https://playingcards.io/d72tb7</a>
+          <a href="https://playingcards.io/d72tb7" target="_blank">
+            https://playingcards.io/d72tb7
+          </a>
         </p>
         <p>-or-</p>
         <p>1) Print out our premade cards, or create your own deck!</p>
